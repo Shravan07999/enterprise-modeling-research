@@ -1,0 +1,132 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <I am trying to capture an information technology system and> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// CONCEPT AND ATTRIBUTE
+// --------------------------------------------------------------
+INSTANCE <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:5cm h:1.5cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Innovation Process"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:5cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Production System"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:5cm h:1.5cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Version Management System"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// RELATIONS
+// --------------------------------------------------------------
+RELATION <4EM_Relation>
+	FROM <Concept - 1> : <Concept>
+	TO <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 2> : <Concept>
+	TO <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 2> : <Concept>
+	TO <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 3> : <Concept>
+	TO <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END

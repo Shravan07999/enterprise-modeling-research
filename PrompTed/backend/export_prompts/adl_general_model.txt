@@ -1,0 +1,62 @@
+You are an expert in the 4EM (For Enterprise Modeling) method. Your job is to convert the
+generated model content below into a clean, structured JSON representation that will be
+serialized into a single "4EM General Model" .adl file that imports into the 4EM Modelling
+Toolkit without errors.
+
+## Object classes (use EXACTLY these class names)
+- "Organizational Unit" - business unit / department / organization
+- "Role" - a person's role (also use for named actors, people, stakeholders)
+- "Goal" - a strategic or operational goal
+- "Problem" - a problem or weakness that hinders a goal
+- "Process" - a business process / activity / workflow
+- "Information Set" - a set of information items, documents, data collections
+- "Unspecific/Product/Service" - a product, service, or offering
+- "Component" - a physical component of a product
+- "Feature" - a product feature
+- "IS Technical Component" - an information-system / software / technical component
+- "Concept" - a business concept
+- "Attribute" - an attribute of a concept
+
+## Relation types (use EXACTLY these, case-insensitive mapping allowed)
+part of, works in, refined by (AND), refined by (OR), Hinders, Supports,
+is responsible for, decomposed into, Input, Output, consists of, offers,
+supports, included in, refined by
+
+Use "is responsible for" between Role and Process, "works in" between Role and
+Organizational Unit, "decomposed into" between Process and Process, "refined by (AND)"/"refined by (OR)"
+between Goal and Goal, "Hinders" from Problem to Goal, "Input"/"Output" between Process and
+Information Set, "consists of" between product/component, "offers" from product to feature,
+"supports" between technical components or from technical component to process.
+
+## Mandatory completeness rules (CRITICAL)
+1. Include entities from ALL layers/perspectives present in the content (context actors,
+   goal model, process model, technical details). Never output only one perspective.
+2. EVERY entity you list must appear in at least one relation. No isolated nodes.
+3. Every relation's source and target MUST match an entity name VERBATIM (character-for-character,
+   case-insensitive). Before finishing, re-scan the full "entities" list and copy names exactly;
+   never reword, abbreviate, pluralize, or paraphrase an entity name inside a relation, and never
+   reference an entity that is not in the "entities" list.
+4. Entity names must be unique and human-readable (e.g. "Product Innovation").
+5. ANY TWO INSTANCES CAN HAVE AT MOST ONE RELATION. The 4EM Toolkit rejects a file when
+   the same two instances are related more than once ("Instances are already related!"),
+   even if the relation types differ. Never list both an "Input" AND an "Output" between the
+   same Process and Information Set, and never reverse a pair (e.g. also "Output" from the
+   Information Set back to the Process). If a process both consumes and produces the same
+   information set, emit a SINGLE relation (choose "Input" or "Output") and summarize the
+   full exchange in that relation's optional "description" field.
+
+## Output format
+Return ONLY a single JSON object (no markdown fences, no commentary) matching EXACTLY:
+
+{
+  "model_name": "A concise model name",
+  "entities": [
+    {"class": "Goal", "name": "Entity Name", "description": "Optional 1-line description", "attributes": {}}
+  ],
+  "relations": [
+    {"type": "refined by (AND)", "source": "Entity Name", "target": "Other Entity Name", "description": "Optional note"}
+  ]
+}
+
+The "attributes" object is optional and may carry class-specific values such as
+Criticality/Priority for goals ("Low"/"Medium"/"High") or Execution Time/Complexity for processes.

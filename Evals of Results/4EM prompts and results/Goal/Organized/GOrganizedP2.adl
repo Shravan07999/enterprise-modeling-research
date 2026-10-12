@@ -1,0 +1,194 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <I am trying to capture vision and strategy of an organizatio> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// GOALS
+// --------------------------------------------------------------
+INSTANCE <Goal - 1> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:6cm h:1.5cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Provide the most energy-efficient heating solution on the market"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Goal - 2> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:6cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Minimize the energy consumption of the heat pump"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Goal - 3> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:6cm h:1.5cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Produce the remaining energy required by the heat pump with the integrated photovoltaic module"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// CONCEPT AND ATTRIBUTE
+// --------------------------------------------------------------
+INSTANCE <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3.5cm w:5cm h:1.5cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "High energy consumption of the current product version"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// RELATIONS
+// --------------------------------------------------------------
+RELATION <4EM_Relation>
+	FROM <Goal - 1> : <Goal>
+	TO <Goal - 2> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "refined by (AND)"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Goal - 1> : <Goal>
+	TO <Goal - 3> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "refined by (AND)"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 1> : <Concept>
+	TO <Goal - 1> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END

@@ -1,0 +1,446 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <Based on the concept model according to the 4EM method, mode> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// CONCEPT AND ATTRIBUTE
+// --------------------------------------------------------------
+INSTANCE <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:5cm h:1.5cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Energy-efficiency"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:5cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Energy output"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:5cm h:1.5cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Energy consumption"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 4> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3.5cm w:5cm h:1.5cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Customer survey"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 5> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:3.5cm w:5cm h:1.5cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "provides overview_of Feature"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 6> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:3.5cm w:5cm h:1.5cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Feature"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 7> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:6cm w:5cm h:1.5cm index:7"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Target feature"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 8> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:6cm w:5cm h:1.5cm index:8"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Heat pump"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 9> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:6cm w:5cm h:1.5cm index:9"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Campaign plan"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 10> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:8.5cm w:5cm h:1.5cm index:10"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "describes Social media activities"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 11> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:8.5cm w:5cm h:1.5cm index:11"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "describes Print media products"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 12> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:8.5cm w:5cm h:1.5cm index:12"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Order confirmation"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 13> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:11cm w:5cm h:1.5cm index:13"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Verified order specification"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 14> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:11cm w:5cm h:1.5cm index:14"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Delivery order"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// RELATIONS
+// --------------------------------------------------------------
+RELATION <4EM_Relation>
+	FROM <Concept - 1> : <Concept>
+	TO <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 1> : <Concept>
+	TO <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 4> : <Concept>
+	TO <Concept - 5> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 6> : <Concept>
+	TO <Concept - 7> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 8> : <Concept>
+	TO <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 8> : <Concept>
+	TO <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 8> : <Concept>
+	TO <Concept - 6> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 9> : <Concept>
+	TO <Concept - 10> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 9> : <Concept>
+	TO <Concept - 11> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 12> : <Concept>
+	TO <Concept - 13> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Concept - 12> : <Concept>
+	TO <Concept - 14> : <Concept>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END

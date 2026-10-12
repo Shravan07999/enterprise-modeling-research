@@ -1,0 +1,3 @@
+from semantic_input_builder.file_loader import load_prompt_by_mode
+
+load_prompt_content = load_prompt_by_mode

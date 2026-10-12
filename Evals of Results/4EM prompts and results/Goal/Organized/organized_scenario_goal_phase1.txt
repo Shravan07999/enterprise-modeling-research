@@ -1,0 +1,29 @@
+I am trying to capture vision and strategy of an organization using a goal model (GM) as follows: it has concepts of "Goal", "Opportunity", "Problem" (i.e., "Threat" and "Weakness"), "Cause", and "Constraint". Goals are refined by subgoals and they are connected with its parent goal using "AND" and "OR" relationships. All concepts may have binary relationships with other concepts of the type "supports" and "hinders". Please be less verbose and detailed outcome. Create a List of all Components and Relationships for the following Scenario:
+
+Our company develops and manufactures heat pumps for family homes. The company has the goal to provide the most energy-efficient heating solution on the market. But the energy consumption of the current product version is too high. We have to solve this problem.
+
+Components:
+- Provide the most energy-efficient heating solution on the market
+- Energy consumption of the current product version is too high
+
+Relationships:
+- Provide the most energy-efficient heating solution on the market hinders Energy consumption of the current product version is too high
+
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models .Give as an answer the created model in ADL syntax.
+
+Goals Model Purpose:
+
+- to describe what the enterprise and its employees want to achieve, or to avoid, and when
+- to describe the goals of the enterprise along with the problems associated with achieving these goals
+- to explain why, or why not, processes, rules and requirements exist or do not exist
+
+Components:
+
+- Goal: This component serves to articulate the aspirations and objectives related to the business or the state of its affairs that an individual or organization aims to attain. Goals can manifest as specific, measurable outcomes or broader visions and directions. They encompass various meanings such as targets, needs, requirements, or desired states. A key guideline is that goals should be expressed clearly in full sentences, typically beginning with "The goal is...". It is advisable to avoid combining multiple statements within the same modeling component. 
+- Problem: This element is employed to signify situations where the environment is or could potentially deteriorate into a state unfavorable for achieving goals. Problems can be categorized into two subtypes: threats and weaknesses.
+Constraint: Constraints represent external factors such as business restrictions, regulations, laws, or policies that exert influence over components and relationships within the Enterprise Model.
+- Opportunity: Opportunities denote advantageous circumstances that an organization may capitalize on. When identified, an opportunity should be transformed into a specific goal.
+
+Each Component should be connected with a Relation.
+
+Now you have learned the Language for creating models.

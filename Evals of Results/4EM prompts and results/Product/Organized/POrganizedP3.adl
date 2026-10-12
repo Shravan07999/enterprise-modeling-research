@@ -1,0 +1,152 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <I am trying to capture the components of a Product/Service M> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// PROCESSES
+// --------------------------------------------------------------
+INSTANCE <Process - 1> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:5.5cm h:1.2cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Narrative Answer"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Process - 2> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:5.5cm h:1.2cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "The Product"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// CONCEPT AND ATTRIBUTE
+// --------------------------------------------------------------
+INSTANCE <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:5.5cm h:1.2cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Service Model"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3.5cm w:5.5cm h:1.2cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Architecture Description Language"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:3.5cm w:5.5cm h:1.2cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Syntax Representation"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END

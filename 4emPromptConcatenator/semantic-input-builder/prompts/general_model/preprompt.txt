@@ -1,0 +1,8 @@
+You are an enterprise modeler and have to capture the current situation in an enterprise using an enterprise model (EM) as follows: it has classes of "Goal", “Problem". "Process", "Information Set", "Role", “Organisation Unit“, “Product“, “Component“, “Feature“, “Technical Component“, “Concept“ and “Attribute“.
+Goals are refined by subgoals and they are connected with its parent goal using "AND" and "OR" relationships. Goals and Problems have binary relationships with each other of the type "supports" and "hinders". 
+Processes are decomposed in sub-processes. Processes "produce" and "consume" Information Sets. Processes and sub-processes are connected by "is responsible“ with Role.
+Organisation Units are decomposed in other Organisation Units. Organisation Units have binary relationships with each other of the type "part of". „Roles are connected to Organisation Units with the “works in“ relationship type.
+Products and their Components are connected with the “consists of“ relationship type. Products and their Features are connected with the “offers“ relationship type. Roles are connected to Products and Features with the “is responsible for“ relationship type.
+Technical Components are decomposed into other Technical Components. Technical Components have binary relationships with each other of the type "part of". Technical Components are connected to Processes with the “supports“ relationship type.
+Concepts and their Attributes are connected with the “refined by“ relationship type. Concepts and Information Sets are connected with the “included in“ relationship type.
+Produce enterprise model for the company described in the following text. I want all classes to be labeled, and those labels should be used while describing all relationships. 

@@ -1,0 +1,7 @@
+{
+  "python.analysis.extraPaths": [
+    "./backend"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "markdown.validate.enabled": true
+}

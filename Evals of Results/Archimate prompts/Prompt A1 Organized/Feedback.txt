@@ -1,0 +1,1 @@
+The terminology "stakeholder" creates misunderstanding while creating the rewritten Prompt due to the fact that LLM creates all elements as Business Actors.

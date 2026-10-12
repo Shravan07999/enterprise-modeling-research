@@ -1,0 +1,4 @@
+The enterprise executes an initial "Target Setting" process to define strategic and technical requirements.
+During this phase, a "Customer Survey" provides input data to "Target Setting".
+The "Target Setting" process produces a "List of Target Features" which is then utilized by the "Development Team".
+The "Product Owner" is directly responsible for conducting the "Target Setting" workflow.

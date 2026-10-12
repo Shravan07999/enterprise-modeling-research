@@ -1,0 +1,4 @@
+The model captures the main server Nodes, operating-system System Software, IoT Gateway, and four Communication Networks, but omits all three Locations, six organizational Groupings, physical computer Devices, and application implementation Artifacts. 
+It also introduces four unsupported Motivation elements (Modernize Infrastructure, Long-term Support, Network Upgrade, and Operating System Support). 
+
+Five server→OS Composition relationships are correct. The IoT Gateway→LAN and three WAN→LAN connections have the intended endpoints but use incorrect relationship types, while several server-host→LAN relationships incorrectly replace the required physical-device→LAN connections.

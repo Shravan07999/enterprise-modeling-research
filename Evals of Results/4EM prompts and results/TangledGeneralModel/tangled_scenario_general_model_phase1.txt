@@ -1,0 +1,63 @@
+You are an enterprise modeler and have to capture the current situation in an enterprise using an enterprise model (EM) as follows: it has classes of "Goal", “Problem". "Process", "Information Set", "Role", “Organisation Unit“, “Product“, “Component“, “Feature“, “Technical Component“, “Concept“ and “Attribute“.
+Goals are refined by subgoals and they are connected with its parent goal using "AND" and "OR" relationships. Goals and Problems have binary relationships with each other of the type "supports" and "hinders". 
+Processes are decomposed in sub-processes. Processes "produce" and "consume" Information Sets. Processes and sub-processes are connected by "is responsible“ with Role.
+Organisation Units are decomposed in other Organisation Units. Organisation Units have binary relationships with each other of the type "part of". „Roles are connected to Organisation Units with the “works in“ relationship type.
+Products and their Components are connected with the “consists of“ relationship type. Products and their Features are connected with the “offers“ relationship type. Roles are connected to Products and Features with the “is responsible for“ relationship type.
+Technical Components are decomposed into other Technical Components. Technical Components have binary relationships with each other of the type "part of". Technical Components are connected to Processes with the “supports“ relationship type.
+Concepts and their Attributes are connected with the “refined by“ relationship type. Concepts and Information Sets are connected with the “included in“ relationship type.
+Produce enterprise model for the company described in the following text. I want all classes to be labeled, and those labels should be used while describing all relationships.
+
+Our company develops and manufactures heat pumps for family homes. I work in the product development department as product owner. In this role, I am responsible for our “Smart-Heat” product, which is the next version we will offer on the market. The “Smart-Heat” product consists of the indoor module and the outdoor module. The company has the goal to provide the most energy-efficient heating solution on the market. The problem we have to solve is that the energy consumption of the current product version is too high. I am responsible for solving the problem and reaching the goal.
+I am also in charge of the product innovation process for “Smart-Heat” and its two steps.  The first step in this process is target setting. In target setting, we need the customer survey as input and use it to develop the list of target features. The customer survey provides an overview of what our customers expect for the next version of our products. The next step is to define the product specification based on the target feature list. The result is the specification document and concludes the product innovation process. Specification document defines the functional and non-functional characteristics to be offered by the product. In the process, two IT-systems are used: the production system and the version management system. The version management system only is a support for the production system.
+
+Components:
+- Smart-Heat
+- indoor module
+- outdoor module
+- energy-efficient heating solution
+- high energy consumption
+- product innovation process
+- target setting
+- define product specification
+- customer survey
+- target feature list
+- specification document
+- production system
+- version management system
+
+Relationships:
+- Smart-Heat consists of indoor module
+- Smart-Heat consists of outdoor module
+- energy-efficient heating solution supports high energy consumption
+- high energy consumption hinders energy-efficient heating solution
+- product innovation process is responsible for Smart-Heat
+- product innovation process is responsible for target setting
+- product innovation process is responsible for define product specification
+- target setting produces target feature list
+- customer survey is input to target setting
+- define product specification produces specification document
+- specification document defines functional and non-functional characteristics
+- production system supports product innovation process
+- version management system supports production system
+
+You are a model generator who can create a 4EM General Model based on the given components and the syntax for describing a model.
+
+A 4EM General Model is designed to represent and manage the interactions between various entities in an enterprise from multiple perspectives.
+
+Components:
+
+- Goal: This component serves to articulate the aspirations and objectives related to the business or the state of its affairs that an individual or organization aims to attain. Goals can manifest as specific, measurable outcomes or broader visions and directions. They encompass various meanings such as targets, needs, requirements, or desired states. A key guideline is that goals should be expressed clearly in full sentences, typically beginning with "The goal is...". It is advisable to avoid combining multiple statements within the same modeling component. 
+- Problem: This element is employed to signify situations where the environment is or could potentially deteriorate into a state unfavorable for achieving goals. Problems can be categorized into two subtypes: threats and weaknesses.
+- Process: Describes Process of internal company activities that contribute to achieving corporate goals using company resources.
+- Information Set: Is a component that can either be Output or Input of a process.
+- Role: Defines the function or job description of an individual within the organization. 
+- Organizational Unit: A division or department within the organization.
+- Unspecific/Product/Service: The Unspecific/Product/Service component represents an offering that can either be a combination of both products and services or something that is difficult to classify strictly as a product or service. This component is used when products and services are tightly interwoven or when it's unclear whether the offering is primarily a product or a service.
+- Component: A component is a distinguishable part of a product or service, produced either by the enterprise or supplied by a partner. Components help define the structure of a product or service and can be physical (like a car part) or intangible (like a software module). Components are often linked to actors (responsible roles) or business processes that describe how they are manufactured or procured.
+- Feature: A feature is a specific characteristic or function of a product or service that holds value for the customer. Features are key in shaping the product's or service's value proposition and can be used to differentiate products or services from competitors. Features may also influence how products or services are bundled or marketed.
+- IS Technical Component: Represents a resource in the enterprise relevant for business processes, or products and services. They can be actors performing business processes or resources in business processes. Technical components can be components of products or services. They include computing systems, IT applications, software service, information resources and other IT-related assets.
+- Concept: Concepts within the business rule model encapsulate the essence of terms or entities essential for modeling purposes, representing pertinent information.
+- Attribute: Attributes characterize the properties of a concept, describing its qualities comprehensively within the context of the model.
+
+Each Component should be connected with a Relation.
+Now you learned the Language for creating models.

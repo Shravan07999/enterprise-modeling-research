@@ -1,0 +1,238 @@
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models. Give as an answer the created model in ADL syntax. 
+
+Business Process Model Purpose:
+- The Business Process Model serves as a comprehensive framework for defining and optimizing the operational activities within an organization.
+- It outlines the company’s processes, their interdependencies, and the crucial information and material flows necessary for efficient service delivery.
+
+Types of Processes: This model categorizes processes into primary, supporting, and management categories.
+-Primary Processes: These directly contribute to achieving organizational goals by delivering core products or services.
+- Supporting Processes: They bolster primary processes, enhancing their efficiency and effectiveness.
+- Management Processes: These govern and oversee organizational activities to ensure smooth operations and compliance.
+- Strategic Alignment: Processes are defined and refined based on components of the target model, as they are instrumental in implementing and achieving the company’s strategic objectives.
+
+- Detailed Representation: The model provides a detailed depiction of activities and their interconnections across the organization, promoting clarity and understanding.
+- Forward-Looking Approach: Depending on the project scope, processes may be depicted as existing, planned, or projected for future implementation, aligning with future organizational goals.
+- Hierarchical Structure: Processes are structured hierarchically, with sub-processes breaking down activities into manageable components, facilitating comprehensive modeling and operational clarity.
+
+
+
+The Business Process model utilizes the following elements to represent and manage various aspects of an organizational structure and its operations:
+
+
+- Business process: A business process describes a connected one Process of internal company activities that contribute to achieving corporate goals using company resources. Business processes are a collection of activities that have the following properties:
+- Input and output variables (input and output) of a process are always materials and/or information
+- Processes are controlled by rules that control how the inputs are processed and
+the outputs are produced
+- Processes have relationships to the actor and resource model to document the executing actors and responsibilities for a process
+- A business process uses a limited amount of resources and time once this
+has been initialized
+
+External process: An external process describes a connected one Process of extra-company activities that lead to the achievement of a specific goal. External processes are a collection of activities that have the following properties:
+- The activities are outside the organizational scope of the company
+carried out
+- The activities communicate externally with processes and other activities of the
+corporate
+- The activities are documented because they contribute to the provision of services
+company's performance or clarity about the type of implementation can be achieved must
+
+Information Flow and Material Flow:
+
+Definition: Defined sets of information or materials transferred between processes.
+Types:
+Information Flow: Exchange of data between processes.
+Material Flow: Movement of physical resources between processes.
+Modeled using relationships between process components.
+Flow Relation:
+
+Definition: Describes how information or material flows relate to process components.
+Representation: Solid black line with directional arrows indicating flow direction.
+Example: <IK1> “is_Input” for <P1> and <P1> “has_Result” <IK2>.
+AND Connector:
+
+Definition: Connects multiple business processes in a sequence.
+Function: Ensures all incoming processes must complete before the outgoing process starts (or vice versa).
+Representation: Unfilled (white) circle linking flow sequences.
+OR Connector:
+
+Definition: Links multiple business processes where at least one must complete for the outgoing process to start (or vice versa).
+Representation: Meeting of several flow relations (arrows).
+Function: Allows flexibility by requiring completion of at least one incoming process before proceeding.
+
+
+//////////////////////////////////////////////////////////////
+
+VERSION <5.1>
+
+
+BUSINESS PROCESS MODEL <Business Process Model - new> : <2021_04_22_4EM-Rostock Library_87>
+VERSION <>
+TYPE <Business Process Model>
+
+From here the Components can be displayed. There are some Components given to learn the syntax of these components. The Brackets are placeholders. Further information stands within the brackets:
+
+This i an Example of a Business Process: 
+
+INSTANCE <Process - 1> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:8cm y:7cm w:4.4cm h:1.2cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+This is a Example of a External Process: 
+
+INSTANCE <External Process - 1> : <External Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:15.5cm y:7.5cm w:5.3cm h:2.1cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+This is a Example of a Information Set: 
+
+INSTANCE <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:10.5cm y:12.5cm w:6cm h:1.6cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Information Set"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+This is a Example of AND Conncetor: 
+
+INSTANCE <Join (AND)-16359> : <Join (AND)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:23cm y:13.5cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+//END 
+
+This i a Example of a Split OR Connector: 
+
+INSTANCE <Split (OR)-16362> : <Split (OR)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:10cm y:17cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+//END
+
+This is a Example of a JOIN OR Connector: 
+
+INSTANCE <Join (OR)-16365> : <Join (OR)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:13cm y:17.5cm index:7"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+//END
+
+This is a Example of a Split AND Connector: 
+
+INSTANCE <Split (AND)-16378> : <Split (AND)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:7.5cm y:23cm index:13"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+//END
+
+These are Examples for RELATION <4EM_Relation> Components:
+
+RELATION <4EM_Relation>
+	FROM <External Process - 1> : <External Process>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:10"
+
+	ATTRIBUTE <Type>
+	VALUE "Output"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+Each Component should be connected with a Relation.
+
+Now you have learned the Language for creating models.
+
+
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario:

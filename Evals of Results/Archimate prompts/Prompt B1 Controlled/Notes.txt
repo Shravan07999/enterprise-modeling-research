@@ -1,0 +1,4 @@
+Tried first time, not exportable. second time fail, succeeded on retry 3
+
+
+Most generated components themselves are valid, which explains the high 94.4% Component Accuracy. However, all 6 required Application Services are missing, as is the proper Customer Data Data Object; Customer Data was instead generated as a Business Object. The model also omits the 5 Composition relationships for Handle Claim. The six Application Component → Application Function connections are present but modeled as Serving instead of Assignment, while several required Application Service → Business Process relationships are effectively replaced by direct Application Function → Business Process connections.

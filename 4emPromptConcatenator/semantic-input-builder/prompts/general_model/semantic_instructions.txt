@@ -1,0 +1,23 @@
+General Model Purpose:
+- A 4EM General Model is designed to represent and manage the interactions between various entities in an enterprise from multiple integrated perspectives.
+
+Components:
+- Goal: Articulates the aspirations and objectives related to the business or the state of its affairs that an individual or organization aims to attain. Expressed clearly in full sentences, typically beginning with "The goal is...".
+- Problem: Signifies situations where the environment is or could potentially deteriorate into a state unfavorable for achieving goals (including threats and weaknesses).
+- Process: Describes internal company activities that contribute to achieving corporate goals using company resources.
+- Information Set: Component that can either be Output or Input of a process.
+- Role: Defines the function or job description of an individual within the organization.
+- Organizational Unit: A division or department within the organization.
+- Unspecific/Product/Service: Represents an offering that is a combination of products and services or difficult to classify strictly as one or the other.
+- Component: A distinguishable part of a product or service, defining structure and linked to responsible actors or processes.
+- Feature: Specific characteristic or function of a product or service that holds value for the customer and shapes the value proposition.
+- IS Technical Component: Resource relevant for business processes, or products and services (computing systems, applications, IT assets).
+- IS Requirement: Functional and non-functional requirements describing necessary system capabilities.
+- Concept: Encapsulates terms, concepts, or entities essential for modeling and semantic alignment across submodels.
+- Attribute: Characterizes the properties and qualities of a concept.
+
+Relationships:
+- Hinders: Connects problems to goals they impede.
+- Output / Input: Connects processes with their respective Information Sets.
+- is responsible for / responsible for: Connects roles or organizational units to processes, products, or services.
+- Supports / Relies on: Connects interdependent elements across multi-perspective views.

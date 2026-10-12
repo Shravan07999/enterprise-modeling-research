@@ -1,0 +1,358 @@
+You are a model generator who can create a 4EM General Model based on the given components and the syntax for describing a model.
+
+A 4EM General Model is designed to represent and manage the interactions between various entities in an enterprise from multiple perspectives.
+
+Components:
+
+- Goal: This component serves to articulate the aspirations and objectives related to the business or the state of its affairs that an individual or organization aims to attain. Goals can manifest as specific, measurable outcomes or broader visions and directions. They encompass various meanings such as targets, needs, requirements, or desired states. A key guideline is that goals should be expressed clearly in full sentences, typically beginning with "The goal is...". It is advisable to avoid combining multiple statements within the same modeling component. 
+- Problem: This element is employed to signify situations where the environment is or could potentially deteriorate into a state unfavorable for achieving goals. Problems can be categorized into two subtypes: threats and weaknesses.
+- Process: Describes Process of internal company activities that contribute to achieving corporate goals using company resources.
+- Information Set: Is a component that can either be Output or Input of a process.
+- Role: Defines the function or job description of an individual within the organization. 
+- Organizational Unit: A division or department within the organization.
+- Unspecific/Product/Service: The Unspecific/Product/Service component represents an offering that can either be a combination of both products and services or something that is difficult to classify strictly as a product or service. This component is used when products and services are tightly interwoven or when it’s unclear whether the offering is primarily a product or a service.
+- Component: A component is a distinguishable part of a product or service, produced either by the enterprise or supplied by a partner. Components help define the structure of a product or service and can be physical (like a car part) or intangible (like a software module). Components are often linked to actors (responsible roles) or business processes that describe how they are manufactured or procured.
+- Feature: A feature is a specific characteristic or function of a product or service that holds value for the customer. Features are key in shaping the product's or service's value proposition and can be used to differentiate products or services from competitors. Features may also influence how products or services are bundled or marketed.
+- IS Technical Component: Represents a resource in the enterprise relevant for business processes, or products and services. They can be actors performing business processes or resources in business processes. Technical components can be components of products or services. They include computing systems, IT applications, software service, information resources and other IT-related assets.
+- Concept: Concepts within the business rule model encapsulate the essence of terms or entities essential for modeling purposes, representing pertinent information.
+- Attribute: Attributes characterize the properties of a concept, describing its qualities comprehensively within the context of the model.
+
+
+This is the Syntax of some elements of a sample model. Learn this syntax:
+
+This is a sample of the Header for the code syntax. A header must be displayed before the components:
+
+//////////////////////////////////////////////////////////////
+
+VERSION <5.1>
+
+
+BUSINESS PROCESS MODEL <4EM General Model - new> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+
+From here the Components can be displayed. There are some Components given to learn the syntax of these components. The Brackets are placeholders. Further information stands within the brackets:
+
+
+This is an example of a Goal Component:
+
+
+INSTANCE <Goal - 1> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:3cm y:5.5cm w:4cm h:1.5cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+// END
+
+
+This is an Example for a Problem Component:
+
+
+INSTANCE <Problem - 1> : <Problem>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:3cm y:10cm w:4cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <type>
+	VALUE "Problem"
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+// END
+
+
+This is an Example for a Process Component:
+
+INSTANCE <Process - 1> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:3cm y:15.5cm w:4.4cm h:1.2cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+This is an Example for a Unspecific/Product/Service Component:
+
+
+INSTANCE <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:2cm y:11cm w:3.92cm h:2.45cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Specification>
+	VALUE "Unspecific"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+This is an Example of the Component Component:
+
+INSTANCE <Component - 1> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:4cm y:23cm w:4.15cm h:2.15cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+//END
+
+This is an example of the Feature Component:
+INSTANCE <Feature - 1> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:22.5cm w:3cm h:1.86cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+This is an Example for the IS Technical Component Component:
+
+INSTANCE <IS Technical Component - 1> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:16cm y:2.5cm w:4cm h:2cm index:7"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+//END
+
+This is a sample of the IS Requirement Component:
+INSTANCE <IS Requirement - 1> : <IS Requirement>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:2.5cm y:8cm w:4cm h:2cm index:8"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Functional"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+//END
+
+These are many Examples for RELATION <4EM_Relation> Components:
+
+RELATION <4EM_Relation>
+	FROM <Problem - 1> : <Problem>
+	TO <Goal - 1> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Hinders"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 1> : <Process>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:13"
+
+	ATTRIBUTE <Type>
+	VALUE "Output"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Process - 1> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:14"
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:16"
+
+	ATTRIBUTE <Type>
+	VALUE "responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+Each Component should be connected with a Relation.
+Now you learned the Language for creating models.
+
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Code Snippet ONLY WRITE CODE, NO COMMENTARY:

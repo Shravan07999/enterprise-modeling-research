@@ -1,0 +1,170 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <I am trying to capture Actors and Ressources of an organizat> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// ROLES
+// --------------------------------------------------------------
+INSTANCE <Role - 1> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:4cm h:1.5cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Owner"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 2> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:4cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Owner"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 3> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:4cm h:1.5cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Smart-Heat"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 4> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3.5cm w:4cm h:1.5cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Development Department"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 5> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:3.5cm w:4cm h:1.5cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Company"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+//
+// --------------------------------------------------------------
+// RELATIONS
+// --------------------------------------------------------------
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Role - 2> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Role - 3> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Role - 4> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 4> : <Role>
+	TO <Role - 5> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END

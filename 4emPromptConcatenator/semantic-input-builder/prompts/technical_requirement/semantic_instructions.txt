@@ -1,0 +1,14 @@
+Technical Component and Requirement Model Purpose:
+- The purpose of the technical components and requirements model (TKAM) is to define and document the structure and properties of information systems within an enterprise context.
+- It integrates business goals and processes to specify functional and non-functional requirements for current and future IT systems.
+- TKAM facilitates the design and implementation of IT architectures that align with organizational objectives and support efficient business operations.
+
+Components:
+- IS Requirement: Functional and non-functional requirements that define the desired behavior, constraints, or functionality of a system or component.
+- IS Technical Component: Tangible or logical parts, computing systems, IT applications, software services, or modules within a system that contribute to fulfilling requirements and supporting processes.
+- AND Relationships / Connectors: Connect multiple technical components or requirements in sequence, ensuring all connected components must be completed or available before proceeding.
+- OR Relationships / Connectors: Link technical components or requirements where at least one must be completed or available to proceed.
+
+Relationships:
+- Supports: Indicates that one concept, technical component, or requirement enhances or facilitates another.
+- Hinders: Indicates that an architectural limitation, requirement conflict, or technical component impedes another.

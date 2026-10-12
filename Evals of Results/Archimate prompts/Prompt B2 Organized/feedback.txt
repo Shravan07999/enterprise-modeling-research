@@ -1,0 +1,4 @@
+All 26 generated components are valid and correctly typed, but the four required Groupings—Back Office, Front Office, Shared Service Center, and Center of Excellence—are completely missing, which also removes their aggregation relationships. 
+
+The application-to-function connections have the correct endpoints but are modeled as Serving instead of Assignment, while the captured function-to-function exchanges are modeled as Triggering instead of Flow. 
+Information objects are generally connected through direct Access relationships rather than being represented with their corresponding information-flow relationships. This explains the perfect Component Accuracy but considerably lower relationship scores.

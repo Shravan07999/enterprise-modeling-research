@@ -1,0 +1,770 @@
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models .Give as an answer the created model in ADL syntax.
+
+Product Model Purpose:
+
+- to describe the products and services offered by the enterprise, along with their features, components, and value propositions  
+- to analyze the effects of changes in processes, organization structures, or technical components on products/services and their interrelations  
+- to explain how products and services are linked to business processes and actors involved in their creation and delivery
+
+Components of the product model:
+
+-Product/Service:
+Purpose: The Product/Service component represents an offering that can either be a combination of both products and services or something that is difficult to classify strictly as a product or service. This component is used when products and services are tightly interwoven or when it’s unclear whether the offering is primarily a product or a service.
+
+- Service:
+Purpose: A service is an intangible offering that requires customer participation in the delivery process. It is typically performed upon customer request and is not a physical product. It can be decomposed into components, which can also be services and may include products.
+
+- Product
+Purpose: A product is a tangible or intangible offering produced by the enterprise and offered to the customer in exchange for compensation. Products can be physical (e.g., cars, machinery), digital (e.g., software, digital files), or virtual (e.g., concepts or methods). Products can also have components that are products themselves or include services.
+
+- Component
+Purpose: A component is a distinguishable part of a product or service, produced either by the enterprise or supplied by a partner. Components help define the structure of a product or service and can be physical (like a car part) or intangible (like a software module). Components are often linked to actors (responsible roles) or business processes that describe how they are manufactured or procured.
+
+- Feature
+Purpose: A feature is a specific characteristic or function of a product or service that holds value for the customer. Features are key in shaping the product's or service's value proposition and can be used to differentiate products or services from competitors. Features may also influence how products or services are bundled or marketed.
+
+
+This is the Syntax of some elements of a sample model. Learn this syntax:
+
+This is a sample of the Header for the code syntax. A header must be displayed before the components:
+
+//////////////////////////////////////////////////////////////
+
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <TITLE> : <2021_04_22_4EM-Rostock Library_87>
+VERSION <1>
+TYPE <Product-Service-Model>
+
+From here the Components can be displayed. There are some Components given to learn the syntax of these components. The Brackets are placeholders. Further information stands within the brackets:
+
+
+This is an example of the  Unspecific/Product/Service Component:
+INSTANCE <Unspecific/Product/Service - 3> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:5cm y:3.5cm w:3.92cm h:2.45cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Specification>
+	VALUE "Unspecific"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <Unspecific/Product/Service - 4> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:2cm y:11cm w:3.92cm h:2.45cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Specification>
+	VALUE "Unspecific"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <Unspecific/Product/Service - 5> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:12cm y:10cm w:3.92cm h:2.45cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Specification>
+	VALUE "Unspecific"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <Unspecific/Product/Service - 6> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:6.5cm y:15cm w:3.92cm h:2.45cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Specification>
+	VALUE "Unspecific"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+This is a example of an AND component:
+
+INSTANCE <PartOF (AND)-11105> : <PartOF (AND)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:25cm index:35"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <__Conversion__>
+	VALUE "CLASS \"PartOF (OR)\"
+CLASS \"PartOF (XOR)\""
+//END
+
+This is a example of an AND component:
+INSTANCE <PartOF (OR)-11072> : <PartOF (OR)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:17.5cm index:16"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <__Conversion__>
+	VALUE "CLASS \"PartOF (AND)\"
+CLASS \"PartOF (XOR)\""
+//END
+
+
+This is an Example of the “Component” Component:
+
+INSTANCE <Component - 2> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:4cm y:23cm w:4.15cm h:2.15cm index:22"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+//END
+
+INSTANCE <Component - 3> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:10cm y:24cm w:4.15cm h:2.15cm index:23"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+//END
+
+INSTANCE <Component - 4> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:16cm y:24cm w:4.15cm h:2.15cm index:24"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+//END
+
+INSTANCE <Total-ISA-11094> : <Total-ISA>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17.5cm y:11cm index:28"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+This is an example of the Feature Component:
+INSTANCE <Feature - 2> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:22.5cm w:3cm h:1.86cm index:32"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <Feature - 3> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:14.5cm y:27.5cm w:3cm h:1.86cm index:37"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <Feature - 4> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:22.5cm y:27cm w:3cm h:1.86cm index:38"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <PartOF (XOR)-11117> : <PartOF (XOR)>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:29.5cm y:23.5cm index:41"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <__Conversion__>
+	VALUE "CLASS \"PartOF (AND)\"
+CLASS \"PartOF (OR)\""
+//END
+
+INSTANCE <Feature - 5> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:26cm y:19.5cm w:3cm h:1.86cm index:42"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+//END
+
+INSTANCE <Feature - 6> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:27.5cm y:26.5cm w:3cm h:1.86cm index:43"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+
+
+
+INSTANCE <Partial-ISA-11129> : <Partial-ISA>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:3.5cm y:19.5cm index:47"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+//END
+
+
+
+
+These are many Examples for RELATION <4EM_Relation> Components:
+
+RELATION <4EM_Relation>
+	FROM <PartOF (AND)-11042> : <PartOF (AND)>
+	TO <Unspecific/Product/Service - 3> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:11"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 4> : <Unspecific/Product/Service>
+	TO <PartOF (AND)-11042> : <PartOF (AND)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:9"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 4> : <Unspecific/Product/Service>
+	TO <Partial-ISA-11129> : <Partial-ISA>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:51"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 5> : <Unspecific/Product/Service>
+	TO <PartOF (AND)-11042> : <PartOF (AND)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:10"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 6> : <Unspecific/Product/Service>
+	TO <PartOF (AND)-11066> : <PartOF (AND)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:13"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 7> : <Unspecific/Product/Service>
+	TO <PartOF (AND)-11066> : <PartOF (AND)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:14"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 7> : <Unspecific/Product/Service>
+	TO <Total-ISA-11094> : <Total-ISA>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:29"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 8> : <Unspecific/Product/Service>
+	TO <PartOF (OR)-11072> : <PartOF (OR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:17"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 8> : <Unspecific/Product/Service>
+	TO <Partial-ISA-11129> : <Partial-ISA>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:48"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 9> : <Unspecific/Product/Service>
+	TO <PartOF (OR)-11072> : <PartOF (OR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:18"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 9> : <Unspecific/Product/Service>
+	TO <Total-ISA-11094> : <Total-ISA>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:30"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <PartOF (AND)-11066> : <PartOF (AND)>
+	TO <Unspecific/Product/Service - 5> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:15"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+RELATION <4EM_Relation>
+	FROM <PartOF (OR)-11072> : <PartOF (OR)>
+	TO <Unspecific/Product/Service - 7> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:19"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <PartOF (OR)-11078> : <PartOF (OR)>
+	TO <Unspecific/Product/Service - 8> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:21"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Component - 2> : <Component>
+	TO <PartOF (OR)-11078> : <PartOF (OR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:25"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Component - 3> : <Component>
+	TO <PartOF (OR)-11078> : <PartOF (OR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:26"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Component - 4> : <Component>
+	TO <PartOF (OR)-11078> : <PartOF (OR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:27"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Total-ISA-11094> : <Total-ISA>
+	TO <Unspecific/Product/Service - 5> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:31"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Feature - 2> : <Feature>
+	TO <Unspecific/Product/Service - 9> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:33"
+
+	ATTRIBUTE <Type>
+	VALUE "requires"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Feature - 2> : <Feature>
+	TO <Unspecific/Product/Service - 8> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:34"
+
+	ATTRIBUTE <Type>
+	VALUE "requires"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <PartOF (AND)-11105> : <PartOF (AND)>
+	TO <Feature - 2> : <Feature>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:36"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Feature - 3> : <Feature>
+	TO <PartOF (AND)-11105> : <PartOF (AND)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:39"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Feature - 4> : <Feature>
+	TO <PartOF (AND)-11105> : <PartOF (AND)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:40"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <PartOF (XOR)-11117> : <PartOF (XOR)>
+	TO <Feature - 2> : <Feature>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:45"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Feature - 5> : <Feature>
+	TO <PartOF (XOR)-11117> : <PartOF (XOR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:46"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Feature - 6> : <Feature>
+	TO <PartOF (XOR)-11117> : <PartOF (XOR)>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:44"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Partial-ISA-11129> : <Partial-ISA>
+	TO <Unspecific/Product/Service - 6> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:49"
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+
+Each Component should be connected with a Relation.
+
+Now you have learned the Language for creating models.
+
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario ONLY WRITE CODE, NO COMMENTARY:
+

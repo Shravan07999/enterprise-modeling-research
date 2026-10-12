@@ -1,0 +1,369 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <I am trying to capture the components of a Product/Service M> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// PROCESSES
+// --------------------------------------------------------------
+INSTANCE <Process - 1> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:5.5cm h:1.2cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Comprehensive Narrative Answer"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Process - 2> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:5.5cm h:1.2cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Service Model"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Process - 3> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:5.5cm h:1.2cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Indoor Module"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Process - 4> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3.5cm w:5.5cm h:1.2cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Outdoor Module"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Process - 5> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:3.5cm w:5.5cm h:1.2cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Energy Efficiency"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+INSTANCE <Process - 6> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:3.5cm w:5.5cm h:1.2cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Photovoltaic Module"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// CONCEPT AND ATTRIBUTE
+// --------------------------------------------------------------
+INSTANCE <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:6cm w:5.5cm h:1.2cm index:7"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Outdoor Air Exchange Unit"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 2> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:6cm w:5.5cm h:1.2cm index:8"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Emission Energy Production"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 3> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:6cm w:5.5cm h:1.2cm index:9"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Shooting Service"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 4> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:8.5cm w:5.5cm h:1.2cm index:10"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Annual Service"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 5> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:8.5cm w:5.5cm h:1.2cm index:11"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Service Kit"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Concept - 6> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:8.5cm w:5.5cm h:1.2cm index:12"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Quick Response"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END

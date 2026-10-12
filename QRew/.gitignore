@@ -1,0 +1,31 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# Database & runtime dumps
+*.db
+backend/qrew_latest_event.json
+backend/qrew_output_model.txt
+
+# Testing & caches
+.pytest_cache/
+.coverage
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,18 @@
+Goals Model Purpose:
+- To describe what the enterprise and its employees want to achieve, or to avoid, and when.
+- To describe the goals of the enterprise along with the problems associated with achieving these goals.
+- To explain why, or why not, processes, rules and requirements exist or do not exist.
+
+Components:
+- Goal: This component serves to articulate the aspirations and objectives related to the business or the state of its affairs that an individual or organization aims to attain. Goals can manifest as specific, measurable outcomes or broader visions and directions. They encompass various meanings such as targets, needs, requirements, or desired states. A key guideline is that goals should be expressed clearly in full sentences, typically beginning with "The goal is...". It is advisable to avoid combining multiple statements within the same modeling component.
+- Problem: This element is employed to signify situations where the environment is or could potentially deteriorate into a state unfavorable for achieving goals. Problems can be categorized into two subtypes: threats and weaknesses.
+- Constraint: Constraints represent external factors such as business restrictions, regulations, laws, or policies that exert influence over components and relationships within the Enterprise Model.
+- Opportunity: Opportunities denote advantageous circumstances that an organization may capitalize on. When identified, an opportunity should be transformed into a specific goal.
+- Cause: Represents factors or sources that bring about problems, constraints, or opportunities.
+- Logical connectors (AND, AND/OR): Connect related goals, problems, causes, or opportunities logically.
+
+Relationships:
+- Supports: Indicates that achieving one goal or element supports or contributes positively to another.
+- Contradicts: Indicates conflict or trade-offs between goals or elements.
+- Hinders: Indicates that a problem, constraint, or condition impedes or prevents achievement of a goal.
+- Causes: Indicates that an element directly leads to or produces another situation or opportunity.

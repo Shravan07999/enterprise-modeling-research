@@ -1,0 +1,110 @@
+# ==========================================
+# EM Suite - Master Publication .gitignore
+# ==========================================
+
+# 1. Environment and Credentials
+.env
+.env.*
+!.env.example
+!.env.template
+
+# 2. IDE / AI Agent Development Files (not for publication)
+.agents/
+PROJECT_STATE.md
+projectstate.md
+
+# 3 (was 2). SQLite and Local Databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+database.db
+qrew.db
+hyde.db
+
+# 3. Vector Store and Cache Artifacts
+backend/chroma_db/
+**/chroma_db/
+**/.chroma/
+**/.mypy_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+
+# 4. Copyright-Restricted Literature & Datasets
+HyDE/backend/data/*.pdf
+
+# 5. Python Artifacts & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+
+# 6. Node.js & Next.js Build Output — including generated TS files
+node_modules/
+.next/
+**/.next/
+out/
+next-env.d.ts
+**/next-env.d.ts
+tsconfig.tsbuildinfo
+**/*.tsbuildinfo
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 7. Ephemeral Execution Traces & Generated Outputs
+qrew_latest_event.json
+**/qrew_latest_event.json
+qrew_output_model.txt
+**/qrew_output_model.txt
+4emPromptConcatenator/semantic-input-builder/output/extractions/
+4emPromptConcatenator/semantic-input-builder/output/final_inputs/
+
+# 7.5. Runtime Logs
+*.log
+**/metrics.log
+
+# 7.6. Test Run Output Artifacts (generated during development runs)
+QRew/backend/test_export.adl
+QRew/backend/test_export.archimate
+QRew/backend/test_archi.archimate
+QRew/backend/test_output.adl
+QRew/backend/test_output.archimate
+QRew/test.archimate
+QRew/test003QRew.adl
+HyDE/test_adl_output.adl
+HyDE/test_archimate.xml
+
+# 8. Stale Backups
+**/_backup_pre_telemetry/
+
+# 9. Operating System & Editor Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/.ropeproject

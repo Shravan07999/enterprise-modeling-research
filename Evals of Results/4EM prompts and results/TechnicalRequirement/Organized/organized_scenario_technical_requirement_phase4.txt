@@ -1,0 +1,49 @@
+I am trying to capture an information technology system and its requirements of an organization using a Technical component and requirements model as follows: it has concepts of: “functional requirements”,”non functional requirement”,”concept”, “technical Component” . Technical Components can be connected with other Technical Components as a parent using "AND" and "OR" Components for the relationships. All concepts may have binary relationships with other concepts of the type “hinders”, “supports”. Create a List of all Components and Relationships for the following Scenario:
+
+The product innovation process uses two IT-systems: the production system and the version management system. The production system is the most important one. The version management system supports the production system. The production system consists of three components: the database system, the transaction middleware and the user interface. The IT system used in the marketing campaign is the social media studio, which consists of the SM authoring system and the SM life system. Both share the SM repository. IT-systems supporting the handling of customer orders are the product planning system and the enterprise resource planning system. Both systems share a distributed database.
+
+Components:
+- production system
+- version management system
+- database system
+- transaction middleware
+- user interface
+- social media studio
+- SM authoring system
+- SM life system
+- SM repository
+- product planning system
+- enterprise resource planning system
+- distributed database
+
+Relationships:
+- version management system supports production system
+- production system has component database system
+- production system has component transaction middleware
+- production system has component user interface
+- social media studio has component SM authoring system
+- social media studio has component SM life system
+- SM authoring system shares SM repository
+- SM life system shares SM repository
+- product planning system shares distributed database
+- enterprise resource planning system shares distributed database
+
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models.
+
+Technical Component and Requirement Modell Purpose:
+
+- The purpose of the technical components and requirements model (TKAM) is to define and document the structure and properties of information systems within an enterprise context. 
+- It integrates business goals and processes to specify functional and non-functional requirements for current and future IT systems. 
+- TKAM facilitates the design and implementation of IT architectures that align with organizational objectives and support efficient business operations.
+
+Components:
+
+- Definition: Functional requirements define the desired behavior or functionality of a system or component. Technical components represent tangible parts or modules within a system that contribute to fulfilling these requirements.
+- AND Relationships: Connect multiple technical components as parents in a sequence, ensuring all connected components must be completed or available before proceeding.
+- OR Relationships: Link technical components where at least one must be completed or available to proceed.
+- Supports: Indicates that one concept or component enhances or facilitates another.
+Hinders
+
+Each Component should be connected with a Relation.
+
+Now you have learned the Language for creating models.

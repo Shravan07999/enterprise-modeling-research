@@ -1,0 +1,41 @@
+I am trying to capture Actors and Ressources of an organization using an Actors and Ressource model as follows: it has concepts of "Organizational unit", "non human ressource", “Role”. Individuals are connected to their parent node Role. Roles are connected to their parent node Organizational Unit and may have binary relationships with other concepts of the type “leads”. Organizational Units can have binary relationships with other organizational units of the type “part_of”. Please be less verbose and have a detailed outcome. Create a List of all Components and Relationships for the following Scenario:
+
+In the company, the role of the product owner for the heat pump “Smart-Heat” is responsible for the product innovation process and also has the responsibility to reach the goal of the most energy-efficient heating solution. The product owner works in the product development department, an organisational unit of the company. The role of product designer also works in the product development department, which is another organizational unit of the company. The product designer is responsible for the sub-goal of minimizing the energy consumption of the heat pump.
+
+Components:
+- Product Owner
+- Product Designer
+- Product Development Department
+- Smart-Heat
+- Energy Efficiency Goal
+- Minimizing Energy Consumption Sub-Goal
+
+Relationships:
+- Product Owner performs Product Innovation Process
+- Product Owner has result Energy Efficiency Goal
+- Product Designer performs Minimizing Energy Consumption Sub-Goal
+- Product Owner works in Product Development Department
+- Product Designer works in Product Development Department
+- Product Development Department part_of Company
+
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models.
+
+Actors and Ressources Model purpose:
+- An actors and resource model is designed to represent and manage the interactions between various entities (actors) and the resources they use or affect within a system. 
+- The actors and resources model utilizes the following elements to represent and manage various aspects of an organizational structure and its operations:
+
+Components: 
+
+- Individual: Represents a single person involved in the organization.
+- Role: Defines the function or job description of an individual within the organization.
+- Resource: Denotes the assets or tools available to individuals or roles.
+- Organizational Unit: A division or department within the organization.
+- Development Action: Specific tasks or activities aimed at achieving organizational goals.
+- Partial Part of Relation: A component of a larger relationship within the model.
+- Total Part of Relation: The complete relationship connecting different elements in the model.
+- Comment: Annotations or notes providing additional context or information.
+- Relational Arrow: Visual representation of relationships or interactions between elements.
+- These elements collectively help in visualizing, planning, and analyzing the roles, resources, and relationships within an organization.
+
+Each Component should be connected with a Relation.
+Now you learned the Language for creating models.

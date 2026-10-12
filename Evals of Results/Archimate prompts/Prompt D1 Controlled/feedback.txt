@@ -1,0 +1,5 @@
+Every generated semantic component is valid, giving 100% Component Accuracy, but the model omits all 9 Grouping elements, all 6 Application Functions, and the Claim Submission Service Business Service. 
+These omissions remove a large number of required Aggregation, Assignment, and Realization relationships. 
+
+The generated Technology-layer structure and most Handle Claim/Application Service connections are correct. 
+The model also substitutes direct Application Component → Application Service assignments where the prompt requires Application Component → Application Function → Application Service, and introduces an unsupported Pay → Customer Information Access relationship.

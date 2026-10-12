@@ -1,0 +1,8 @@
+I am trying to capture the components of a Product/Service Model using a similar goal model (GM) approach:
+
+It has the concepts of "Product/Service", "Service", "Product", "Component", and "Feature".
+Products and Services are connected to components via "part_of" relationships, and components are associated with responsible actors or business processes.
+Products/Services can be further decomposed into sub-products or sub-services, and relationships can include "is_a", "requires", and "part_of".
+Features are related to products and services to represent their value proposition.
+All components may have binary relationships with other components of the type "supports" or "hinders".
+Please create a list of all Components and Relationships for the following Scenario:

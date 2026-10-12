@@ -1,0 +1,3 @@
+Magdeburg Headquarters, Hamburg Branch Office, and Rostock Branch Office are incorrectly modeled as Business Actors instead of Locations, reducing component accuracy.
+
+The six stakeholder-to-location pairings are captured, but as Assignment relationships in the opposite modeling structure rather than the required Location aggregation relationships. The model also introduces three Arche Insurance Company → site Composition relationships that aren't stated by the Original Prompt.

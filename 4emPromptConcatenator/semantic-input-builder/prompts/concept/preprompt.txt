@@ -1,0 +1,9 @@
+Based on the concept model according to the 4EM method, modelling objects are divided into components in order to specify concepts, attributes and relationships. The aim is to achieve a standardized understanding of relevant terms and entities in the model.
+
+Subdivision of the components:
+
+Concept: Represents essential terms or entities.
+Attribute: Describes characteristics of a concept.
+Relationship: Describes the connections between concepts, categorized in “1:1” relationships, “1:n” relationships and “n:m” relationships. 
+
+Create a List of all Components and Relationships for the following Scenario:

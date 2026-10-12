@@ -1,0 +1,300 @@
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models .Give as an answer the created model in ADL syntax.
+
+Goals Model Purpose:
+
+- to describe what the enterprise and its employees want to achieve, or to avoid, and when
+- to describe the goals of the enterprise along with the problems associated with achieving these goals
+- to explain why, or why not, processes, rules and requirements exist or do not exist
+
+Components:
+
+- Goal: This component serves to articulate the aspirations and objectives related to the business or the state of its affairs that an individual or organization aims to attain. Goals can manifest as specific, measurable outcomes or broader visions and directions. They encompass various meanings such as targets, needs, requirements, or desired states. A key guideline is that goals should be expressed clearly in full sentences, typically beginning with "The goal is...". It is advisable to avoid combining multiple statements within the same modeling component. 
+- Problem: This element is employed to signify situations where the environment is or could potentially deteriorate into a state unfavorable for achieving goals. Problems can be categorized into two subtypes: threats and weaknesses.
+Constraint: Constraints represent external factors such as business restrictions, regulations, laws, or policies that exert influence over components and relationships within the Enterprise Model.
+- Opportunity: Opportunities denote advantageous circumstances that an organization may capitalize on. When identified, an opportunity should be transformed into a specific goal.
+
+
+
+This is the Syntax of some elements of a sample model. Learn this syntax:
+
+This is a sample of the Header for the code syntax. A header must be displayed before the components:
+
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <Test 2 > : <2021_04_22_4EM-Rostock Library_87>
+VERSION <2 >
+TYPE <Goal Model>
+
+
+From here the Components can be displayed. There are some Components given to learn the syntax of these components. The Brackets are placeholders. Further information stands within the brackets:
+
+//////////////////////////////////////////////////////////////
+
+This is a example of a Goal Component:
+INSTANCE <Goal - [Individual Name]> : <Goal>
+	ATTRIBUTE <Position>
+	VALUE "NODE x:5cm y:3cm w:4cm h:1.5cm index:2"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE "The goal is.."
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+	ATTRIBUTE <Defined by>
+	VALUE ""
+	ATTRIBUTE <Attributes>
+	VALUE
+// END
+
+This is an Example for a Problem Component:
+
+INSTANCE <[one from Threat, Weakness or Problem] - [Name]> : <Problem>
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:5.5cm w:4cm h:1.5cm index:7"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+	ATTRIBUTE <Attributes>
+	VALUE
+	ATTRIBUTE <Defined by>
+	VALUE ""
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+	ATTRIBUTE <Description>
+	VALUE "[Here Stands the description]"
+	ATTRIBUTE <type>
+	VALUE "Problem"
+
+// END
+
+This is an Example for a Cause Component:
+INSTANCE <Cause - [Name]> : <Cause>
+	ATTRIBUTE <Position>
+	VALUE "NODE x:4cm y:9.5cm w:4cm h:1.5cm index:10"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+	ATTRIBUTE <Attributes>
+	VALUE
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+//END
+
+This is an Example for a Constraint Component:
+INSTANCE <Constraint - [Name]> : <Constraint>
+	ATTRIBUTE <Position>
+	VALUE "NODE x:11cm y:12.5cm w:4cm h:1.5cm index:11"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+	ATTRIBUTE <Attributes>
+	VALUE
+	ATTRIBUTE <Defined by>
+	VALUE ""
+//END
+
+This is an Example for a Oppurtunity Component:
+INSTANCE <Opportunity - [Name]> : <Opportunity>
+	ATTRIBUTE <Position>
+	VALUE "NODE x:4cm y:12.5cm w:4cm h:1.5cm index:12"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+	ATTRIBUTE <Attributes>
+	VALUE
+	ATTRIBUTE <Defined by>
+	VALUE ""
+//END
+
+This is an Example for a AND Component:
+INSTANCE <AND-11067> : <AND>
+	ATTRIBUTE <Position>
+	VALUE "NODE x:10.5cm y:9.5cm index:13"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+This is an Example for a AND/OR Component:
+INSTANCE <AND/OR-11077> : <AND/OR>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:15.5cm y:3.5cm index:18"
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+//END
+
+
+These are many Examples for RELATION <4EM_Relation> Components:
+RELATION <4EM_Relation>
+	FROM <Goal - 5> : <Goal>
+	TO <Goal - 6> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:5"
+	ATTRIBUTE <Type>
+	VALUE "Supports"
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Goal - 6> : <Goal>
+	TO <Goal - 7> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:6"
+	ATTRIBUTE <Type>
+	VALUE "Contradicts"
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Goal - 7> : <Goal>
+	TO <Goal - 6> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:1"
+	ATTRIBUTE <Type>
+	VALUE "Contradicts"
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Problem - 1> : <Problem>
+	TO <Goal - 7> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:9"
+	ATTRIBUTE <Type>
+	VALUE "Hinders"
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Problem - 1> : <Problem>
+	TO <AND/OR-11077> : <AND/OR>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:23"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Problem - 2> : <Problem>
+	TO <Goal - 6> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE ""
+	ATTRIBUTE <Type>
+	VALUE "Hinders"
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <Cause - 1> : <Cause>
+	TO <Opportunity - 1> : <Opportunity>
+	ATTRIBUTE <Positions>
+	VALUE ""
+	ATTRIBUTE <Type>
+	VALUE "Causes"
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <AND-11067> : <AND>
+	TO <Problem - 2> : <Problem>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:14"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <AND-11067> : <AND>
+	TO <Problem - 1> : <Problem>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:15"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <AND-11067> : <AND>
+	TO <Goal - 6> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:16"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <AND-11067> : <AND>
+	TO <Opportunity - 1> : <Opportunity>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:17"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <AND/OR-11077> : <AND/OR>
+	TO <Problem - 2> : <Problem>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:22"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+//END
+
+RELATION <4EM_Relation>
+	FROM <AND/OR-11077> : <AND/OR>
+	TO <Goal - 7> : <Goal>
+	ATTRIBUTE <Positions>
+	VALUE "EDGE 0 index:24"
+	ATTRIBUTE <Type>
+	VALUE ""
+	ATTRIBUTE <Description>
+	VALUE ""
+
+Each Component should be connected with a Relation.
+
+Now you have learned the Language for creating models.
+
+Based on the learned Components for modeling, create a specific and very detailed model for the following Scenario in one Codesnippet ONLY WRITE CODE, NO COMMENTARY:

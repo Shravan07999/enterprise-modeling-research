@@ -1,0 +1,399 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <I am trying to capture an information technology system and> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+//
+// --------------------------------------------------------------
+// ROLES
+// --------------------------------------------------------------
+INSTANCE <Role - 1> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:1cm w:4cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Production System"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 2> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:1cm w:4cm h:1.5cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Version Management System"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 3> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3.5cm w:4cm h:1.5cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Social Media Studio"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 4> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:6cm w:4cm h:1.5cm index:7"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Transaction Middleware"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 5> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:6cm w:4cm h:1.5cm index:8"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "User Interface"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 6> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:6cm w:4cm h:1.5cm index:9"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "SM Authoring System"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+INSTANCE <Role - 7> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:8.5cm w:4cm h:1.5cm index:10"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "SM Life System"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+//
+// --------------------------------------------------------------
+// PROCESSES
+// --------------------------------------------------------------
+INSTANCE <Process - 1> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:5.5cm h:1.2cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Innovation Process"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// INFORMATION SETS
+// --------------------------------------------------------------
+INSTANCE <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:9cm y:3.5cm w:5cm h:1.5cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "SM Repository"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+INSTANCE <Information Set - 2> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:17cm y:3.5cm w:5cm h:1.5cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Database System"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// --------------------------------------------------------------
+// RELATIONS
+// --------------------------------------------------------------
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Process - 1> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Process - 1> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Process - 1> : <Process>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Output"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Information Set - 2> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "manages"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Role - 4> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Role - 5> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Role - 1> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 3> : <Role>
+	TO <Role - 6> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 3> : <Role>
+	TO <Role - 7> : <Role>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "related to"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 6> : <Role>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "manages"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+RELATION <4EM_Relation>
+	FROM <Role - 7> : <Role>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "manages"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END

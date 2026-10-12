@@ -1,0 +1,1442 @@
+//////////////////////////////////////////////////////////////
+//
+VERSION <5.1>
+
+BUSINESS PROCESS MODEL <4EM General Model - new> : <4EM-Rostock Library_87_22_04_01>
+VERSION <>
+TYPE <4EM General Model>
+//
+// ──────────────────────────────────────────────────────────────
+// ORGANIZATIONAL UNITS
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Organizational Unit - 1> : <Organizational Unit>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:1cm w:4cm h:1.5cm index:1"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "The Company"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+
+INSTANCE <Organizational Unit - 2> : <Organizational Unit>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:3cm w:4cm h:1.5cm index:2"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Development Department"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// ROLES
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Role - 1> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:6cm w:4cm h:1.5cm index:3"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Owner"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+
+INSTANCE <Role - 2> : <Role>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:8cm w:4cm h:1.5cm index:4"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Designer"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// GOALS
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Goal - 1> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:11cm w:6cm h:1.5cm index:5"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Provide the most energy-efficient heating solution on the market"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Goal - 2> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:13cm w:6cm h:1.5cm index:6"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Minimize the energy consumption of the heat pump"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Goal - 3> : <Goal>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:15cm w:7cm h:1.5cm index:7"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Produce the remaining energy required by the heat pump with the integrated photovoltaic module"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// PROBLEM
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Problem - 1> : <Problem>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:17.5cm w:6cm h:1.5cm index:8"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Defined by>
+	VALUE ""
+
+	ATTRIBUTE <Priority>
+	VALUE "Low"
+
+	ATTRIBUTE <Criticality>
+	VALUE "Low"
+
+	ATTRIBUTE <Description>
+	VALUE "High energy consumption of current product version"
+
+	ATTRIBUTE <type>
+	VALUE "Problem"
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// PROCESSES
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Process - 1> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:20cm w:5.5cm h:1.2cm index:9"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Innovation"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Process - 2> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:22cm w:5.5cm h:1.2cm index:10"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Target Setting"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Process - 3> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:24cm w:5.5cm h:1.2cm index:11"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Define Product Specification"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Process - 4> : <Process>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:26cm w:5.5cm h:1.2cm index:12"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Product Design"
+
+	ATTRIBUTE <Decomposed Process>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Execution Time>
+	VALUE 0
+
+	ATTRIBUTE <Complexity>
+	VALUE 0
+
+	ATTRIBUTE <Type>
+	VALUE ""
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+	ATTRIBUTE <Is the exact same as>
+	VALUE ""
+
+	ATTRIBUTE <hidden_attribute>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// INFORMATION SETS
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:8cm y:6cm w:5cm h:1.5cm index:13"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Customer Survey"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Information Set - 2> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:8cm y:8cm w:5cm h:1.5cm index:14"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "List of Target Features"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Information Set - 3> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:8cm y:10cm w:5cm h:1.5cm index:15"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Specification Document"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Information Set - 4> : <Information Set>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:8cm y:12cm w:5cm h:1.5cm index:16"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Design Description"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// PRODUCT (Unspecific/Product/Service)
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:14cm y:1cm w:6cm h:2cm index:17"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Specification>
+	VALUE "Product"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Description>
+	VALUE "Smart-Heat"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// COMPONENTS
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Component - 1> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:14cm y:4cm w:4cm h:2cm index:18"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Indoor Module"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+//END
+
+
+INSTANCE <Component - 2> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:14cm y:7cm w:4cm h:2cm index:19"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Outdoor Module"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+//END
+
+
+INSTANCE <Component - 3> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:14cm y:10cm w:4cm h:2cm index:20"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Photovoltaic Module"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+//END
+
+
+INSTANCE <Component - 4> : <Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:14cm y:13cm w:4cm h:2cm index:21"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Outdoor Air Exchange Unit"
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// FEATURES
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Feature - 1> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:1cm w:4cm h:1.5cm index:22"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Minimizing Energy Consumption"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Feature - 2> : <Feature>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:3cm w:4cm h:1.5cm index:23"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Photovoltaic Power Generation"
+
+	ATTRIBUTE <Attribute>
+	VALUE
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// TECHNICAL COMPONENTS
+// ──────────────────────────────────────────────────────────────
+INSTANCE <IS Technical Component - 1> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:6cm w:4cm h:1.5cm index:24"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Production System"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+
+INSTANCE <IS Technical Component - 2> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:8cm w:4cm h:1.5cm index:25"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Database System"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+
+INSTANCE <IS Technical Component - 3> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:10cm w:4cm h:1.5cm index:26"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Transaction Middleware"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+
+INSTANCE <IS Technical Component - 4> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:12cm w:4cm h:1.5cm index:27"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "User Interface"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+
+INSTANCE <IS Technical Component - 5> : <IS Technical Component>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:21cm y:14cm w:4cm h:1.5cm index:28"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Version Management System"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+	ATTRIBUTE <Location>
+	VALUE ""
+
+	ATTRIBUTE <Quantity>
+	VALUE 0
+
+	ATTRIBUTE <Attributes>
+	VALUE
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// CONCEPT AND ATTRIBUTE
+// ──────────────────────────────────────────────────────────────
+INSTANCE <Concept - 1> : <Concept>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:1cm y:29cm w:5cm h:1.5cm index:29"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Customer Requirement"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+
+INSTANCE <Attribute - 1> : <Attribute>
+
+	ATTRIBUTE <Position>
+	VALUE "NODE x:8cm y:29cm w:4cm h:1.5cm index:30"
+
+	ATTRIBUTE <External tool coupling>
+	VALUE ""
+
+	ATTRIBUTE <Description>
+	VALUE "Priority"
+
+	ATTRIBUTE <Intermodel-Relations>
+	VALUE
+
+	ATTRIBUTE <Decomposition>
+	VALUE ""
+
+//END
+
+//
+// ──────────────────────────────────────────────────────────────
+// RELATIONS
+// ──────────────────────────────────────────────────────────────
+RELATION <4EM_Relation>
+	FROM <Organizational Unit - 2> : <Organizational Unit>
+	TO <Organizational Unit - 1> : <Organizational Unit>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "part of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Organizational Unit - 2> : <Organizational Unit>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "works in"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Organizational Unit - 2> : <Organizational Unit>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "works in"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Goal - 1> : <Goal>
+	TO <Goal - 2> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "refined by (AND)"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Goal - 1> : <Goal>
+	TO <Goal - 3> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "refined by (AND)"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Problem - 1> : <Problem>
+	TO <Goal - 1> : <Goal>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Hinders"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Process - 1> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 1> : <Process>
+	TO <Process - 2> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "decomposed into"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 1> : <Process>
+	TO <Process - 3> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "decomposed into"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 1> : <Process>
+	TO <Process - 4> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "decomposed into"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Target Setting relations
+//
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Process - 2> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 2> : <Process>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Input"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 2> : <Process>
+	TO <Information Set - 2> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Output"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Define Product Specification relations
+//
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Process - 3> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 3> : <Process>
+	TO <Information Set - 2> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Input"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 3> : <Process>
+	TO <Information Set - 3> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Output"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Product Design relations
+//
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Process - 4> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 4> : <Process>
+	TO <Information Set - 3> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Input"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Process - 4> : <Process>
+	TO <Information Set - 4> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "Output"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Product "Smart-Heat" to Components
+//
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+	TO <Component - 1> : <Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+	TO <Component - 2> : <Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Component - 2> : <Component>
+	TO <Component - 3> : <Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Component - 2> : <Component>
+	TO <Component - 4> : <Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Product "Smart-Heat" offers Features
+//
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+	TO <Feature - 1> : <Feature>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "offers"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+	TO <Feature - 2> : <Feature>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "offers"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Role responsibilities for Product/Feature
+//
+RELATION <4EM_Relation>
+	FROM <Role - 1> : <Role>
+	TO <Unspecific/Product/Service - 1> : <Unspecific/Product/Service>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Role - 2> : <Role>
+	TO <Feature - 1> : <Feature>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "is responsible for"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Technical Components
+//
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 1> : <IS Technical Component>
+	TO <IS Technical Component - 2> : <IS Technical Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 1> : <IS Technical Component>
+	TO <IS Technical Component - 3> : <IS Technical Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 1> : <IS Technical Component>
+	TO <IS Technical Component - 4> : <IS Technical Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "consists of"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 5> : <IS Technical Component>
+	TO <IS Technical Component - 1> : <IS Technical Component>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "supports"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <IS Technical Component - 1> : <IS Technical Component>
+	TO <Process - 1> : <Process>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "supports"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+//
+// Concepts and Attributes
+//
+RELATION <4EM_Relation>
+	FROM <Concept - 1> : <Concept>
+	TO <Attribute - 1> : <Attribute>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "refined by"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END
+
+
+RELATION <4EM_Relation>
+	FROM <Concept - 1> : <Concept>
+	TO <Information Set - 1> : <Information Set>
+
+	ATTRIBUTE <Positions>
+	VALUE ""
+
+	ATTRIBUTE <Type>
+	VALUE "included in"
+
+	ATTRIBUTE <Description>
+	VALUE ""
+
+//END

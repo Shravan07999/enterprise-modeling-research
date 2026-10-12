@@ -1,0 +1,16 @@
+Product Model Purpose:
+- To describe the products and services offered by the enterprise, along with their features, components, and value propositions.
+- To analyze the effects of changes in processes, organization structures, or technical components on products/services and their interrelations.
+- To explain how products and services are linked to business processes and actors involved in their creation and delivery.
+
+Components of the product model:
+- Product/Service (Unspecific/Product/Service): Represents an offering that can either be a combination of both products and services or something that is difficult to classify strictly as a product or service. Used when products and services are tightly interwoven or when it’s unclear whether the offering is primarily a product or a service.
+- Service: An intangible offering that requires customer participation in the delivery process. Typically performed upon customer request and is not a physical product. Can be decomposed into components, which can also be services and may include products.
+- Product: A tangible or intangible offering produced by the enterprise and offered to the customer in exchange for compensation. Can be physical (e.g., cars, machinery), digital (e.g., software, digital files), or virtual (e.g., concepts or methods). Can have components that are products themselves or include services.
+- Component: A distinguishable part of a product or service, produced either by the enterprise or supplied by a partner. Defines the structure of a product or service and can be physical or intangible. Often linked to actors (responsible roles) or business processes that describe how they are manufactured or procured.
+- Feature: A specific characteristic or function of a product or service that holds value for the customer. Shapes the value proposition and differentiates offerings from competitors. Influences bundling or marketing.
+- Structural Connectors: PartOF (AND), PartOF (OR), PartOF (XOR), Total-ISA, and Partial-ISA connectors to define structural decomposition and classification hierarchy.
+
+Relationships:
+- requires: Indicates that a feature or offering relies upon another product, service, or component.
+- structural connections: Decompositions linking parts, features, or components to parent products or services.

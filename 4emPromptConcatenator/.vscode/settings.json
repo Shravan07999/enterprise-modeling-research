@@ -1,0 +1,16 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\Shravan\\miniconda3\\python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/semantic-input-builder/src",
+    "${workspaceFolder}/semantic-input-builder"
+  ],
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/semantic-input-builder/src",
+    "${workspaceFolder}/semantic-input-builder"
+  ],
+  "python.testing.pytestArgs": [
+    "semantic-input-builder/tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

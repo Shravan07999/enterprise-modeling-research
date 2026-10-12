@@ -1,0 +1,3 @@
+The model captures the three main processes and services, but most of the explicitly described subprocesses are missing—for example Identify Risks, Collect Important Information, Analyse Risk, Calculate Insurance Premium, Produce Policy, Accept Policy, Send Policy To Customer, and most of the Handle Claim steps.
+
+The generated model also introduces unsupported Business Objects such as Insurance Policy and Claim Document, and several responsibilities/relationships are represented with incorrect ArchiMate semantics. The Original Prompt clearly describes these detailed sequences, so their absence substantially reduces both completeness scores.

@@ -1,0 +1,75 @@
+Based on the concept model according to the 4EM method, modelling objects are divided into components in order to specify concepts, attributes and relationships. The aim is to achieve a standardized understanding of relevant terms and entities in the model.
+
+Subdivision of the components:
+
+Concept: Represents essential terms or entities.
+Attribute: Describes characteristics of a concept.
+Relationship: Describes the connections between concepts, categorized in “1:1” relationships, “1:n” relationships and “n:m” relationships. 
+
+Create a List of all Components and Relationships for the following Scenario:
+
+Let me explain some of the important concepts we use in the company:
+•	Energy-efficiency can be calculated as the energy output for heating divided by the energy consumption. 
+•	Energy consumption is measured in kilowatt-hours (kWh)
+•	The customer survey provides an overview what our customers expect for the next version of our products.
+•	Feature is something the customer wants the product to have.
+•	Target feature is a feature we will implement in the next version of the product
+•	Specification document defines the functional and non-functional characteristics to be offered by the product
+•	Design description defines the main building blocks of a product with their interfaces.
+•	Zero-emission energy production means that energy is produced without CO2 emissions
+•	Heat pump extracts heat from the environment to be used to heat buildings. Heat pumps are characterized by their energy-efficiency, energy consumption and features.
+•	Campaign target document defines the target group, campaign start and end date, and the campaign budget.
+•	Campaign plan describes what social media activities and print media products are part of the campaign.
+•	Campaign statistics summarizes the response rates for the social media and print media activities.
+•	Campaign result document summarizes the statistics and compares them with the campaign target.
+
+Components:
+- Energy-efficiency
+- Energy consumption
+- Customer survey
+- Feature
+- Target feature
+- Specification document
+- Design description
+- Zero-emission energy production
+- Heat pump
+- Campaign target document
+- Campaign plan
+- Campaign statistics
+- Campaign result document
+- Heat pump characteristics
+
+Relationships:
+- Energy-efficiency is calculated as Energy consumption
+- Customer survey provides overview of Feature
+- Target feature is a Feature
+- Specification document defines Functional and non-functional characteristics
+- Design description defines Main building blocks
+- Heat pump has Heat pump characteristics
+- Campaign target document defines Target group, campaign start and end date, campaign budget
+- Campaign plan describes Social media activities and print media products
+- Campaign statistics summarizes Response rates
+- Campaign result document summarizes Campaign statistics
+
+You are a model generator who can deliver individual models based on the given components and the syntax for describing the models. Give as an answer the created model in ADL syntax. 
+
+Concept Model purpose:
+
+- To specify concepts, terms, and entities used across various submodels but not defined within them.
+- To ensure a uniform understanding and usage of these concepts, terms, and entities across different submodels.
+- To describe technical terms, input and output information of processes, and processed materials relevant to the modeling purpose.
+- To include both physical objects (e.g., products) and intangible concepts (e.g., quality) necessary for understanding information and material flows in business processes.
+- To provide a consistent definition for concepts used by all modeling participants and stakeholders, akin to a glossary for the elements of a business model.
+
+Components: 
+
+- Concept: Concepts within the business rule model encapsulate the essence of terms or entities essential for modeling purposes, representing pertinent information.
+- Attribute: Attributes characterize the properties of a concept, describing its qualities comprehensively within the context of the model.
+- Normal Relationships: These connections facilitate linking two or more distinct elements within the model. For instance, a relationship may connect a concept with an attribute, establishing their interdependence.
+- Binary Relationships: This type of relationship exists exclusively between two concepts, defined by a designated connection name. Binary relationships are inherently bidirectional, featuring a primary direction indicated by an arrow, with the inverse direction also specified. They are categorized into three types: 1:1, 1:n, m:n
+- IS_A Relationship: This relationship signifies specialization or generalization between concepts. In this structure, <B> represents the broader concept while <A> is its specialized counterpart, inheriting attributes, values, and integrity constraints.
+- PART_OF Relationship: The PART_OF relationship defines the composition of a concept within other concepts. Here, <B> encompasses both <A> and <C>, refining them within its aggregation. This relationship, also known as aggregation or composition, outlines hierarchical levels of refinement.
+
+Each Component should be connected with a Relation.
+
+Now you have learned the Language for creating models.

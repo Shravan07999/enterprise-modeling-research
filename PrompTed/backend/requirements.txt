@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlmodel
+sqlalchemy
+pydantic
+python-dotenv
+openai
+
+
